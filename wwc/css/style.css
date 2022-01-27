@@ -1,0 +1,452 @@
+/* 背景图片 */
+.background_picture{
+    position:fixed;
+    width:100%;
+    height:92%;
+    left:0;
+    top:0;
+    margin:0;
+    background-image: url("../img/Bing_Wallpaper.jpg");
+}   
+
+/* 底部信息栏 */
+.footer{
+    position: fixed;
+    height: 8%;
+    width:100%;
+    left:0;
+    bottom:0;
+    margin:0;
+    background-color: #333333;
+    padding: 11px 134px;
+}
+/* 底部信息栏链接 */
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color:#666666;
+    margin-right: 25px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    
+}
+.microsoft{
+    font-size: 13px;
+    color:#666666;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* 微软图标 */
+.microsoftlogo{
+    position: fixed;
+    left:137px;
+    top:10px;
+    width:25px;
+    height: 25px;
+    z-index: 1;
+}
+
+/* 微软商标字体 */
+.microsoft_font{
+    position: fixed;
+    left: 167px;
+    top: 12px;
+    font-size:17px;
+    font-style: "微软雅黑";
+    color: #ffffff;
+
+}
+/* 图片 */
+.pictureWordBox{
+    position:fixed;
+    left: 363px;
+    top: 12px;
+    width: 28px;
+    height: 14px;
+}
+.pictureWordBox a {
+    text-decoration: none;
+    color:#cccccc;
+    font-size: 14px;
+}
+.pictureWordBox a:hover{color:#ffffff}
+
+/* 视频 */
+.videoWordBox{
+    position: fixed;
+    left: 424px;
+    top: 12px;
+    width: 29px;
+    height: 14px;
+}
+.videoWordBox a{
+    text-decoration: none;
+    color:#cccccc;
+    font-size: 14px;
+}
+.videoWordBox a:hover {color:#ffffff}
+
+/* 三点菜单 */
+.ThreePoint{
+    position:relative;
+    display: inline-block;
+    top:-13px;
+    left: 478px;
+    width:22px;
+    height: 14px;
+    padding: 20px 5px;
+    cursor: pointer;
+}
+/* 三点菜单-总下拉菜单 */
+.PointMenuBox{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    top: 95%;
+    width: 155px; 
+    padding: 8px 0;
+    background-color: white;
+    box-shadow: 0px 5px 14px 0px rgb(0,0,0,0.2);
+    border-radius: 8px;
+
+}
+
+.ThreePoint:hover .PointMenuBox{display: block;}
+
+.PointMenuBox a{
+    display: block;
+    padding: 13px 110px 14px 19px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-decoration: none ;
+}
+.PointMenuBox a:hover {background-color: #f5f5f5;}
+
+/* 三点菜单-office的右显示菜单 */
+.office{
+    position: relative;
+
+}
+.office a{
+    display: block;
+    padding: 13px 110px 14px 19px;
+    background-color: white;
+    color: balck;
+    font-size: 12px;
+    text-decoration: none ;
+}
+.office a:hover{background-color: #f5f5f5;}
+
+.officeMenuBox{
+    position: absolute;
+    display: none;
+    left: 100%;
+    top: -10px;
+    width: 155px;
+    padding: 8px 0;
+    background-color: white;
+    box-shadow: 0px 5px 14px 0px rgb(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.office:hover .officeMenuBox{display: block;}
+
+.officeMenuBox a{
+    display: block;
+    padding: 13px 110px 14px 19px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-decoration: none ;
+}
+.officeMenuBox a:hover {background-color: #f5f5f5;}
+/* 三点菜单-office菜单提示图片 */
+/* 用户图标-圆圈 */
+.UserCircle{
+    float:right;
+    position: relative;
+    z-index: 1;
+    right: 200px;
+    top: 1px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+/* 用户图标-人像 */
+.UserCircle div{
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    margin-right: -6px;
+    top: 50%;
+    margin-top: -9px;
+    width: 13px;
+    height: 15px;
+
+}
+
+.UserCircle span{
+    display: inline-block;
+    position: absolute;
+    right: 110%;
+    top: 6px;
+    width: 32px;
+    height: 16px;
+    color: white;
+    font-size: 14px;
+}
+/* 三线菜单 */
+.ThreeLine{
+    float:right;
+    position: relative;
+    z-index: 1;
+    right: 111px;
+    top: 5px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+/* 三线菜单-提示框 */
+.LineMenuTip{
+    visibility: hidden;
+    position: absolute;
+    top:170%;
+    left:50%;
+    margin-left:-60px;
+    width: 100px;
+    height:14px;
+    padding: 12px 10px 14px;
+    background-color: #666666;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+.LineMenuTip::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #666666 transparent;
+}
+
+.ThreeLine:hover .LineMenuTip{visibility: visible;}
+/* 背景图信息提示框-主体 */
+.ImgTip{
+    position: fixed;
+    z-index: 1;
+    right : 209px;
+    bottom: 81px;
+    width: 84px;
+    height: 40px;
+    background-color: rgb(32,32,32,.8);
+    border-radius: 5px;
+}
+.ImgTip div{
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    width: 21px;
+    height: 20px;
+}
+.ImgTip .ImgTipWord{
+    position: absolute;
+    display: inline-block;
+    top: 9px;
+    left :42px;
+    width: 27px;
+    color: white;
+    font-size: 13px;
+
+}
+/* 背景图信息提示框-左箭头 */
+.ImgTip .Left{
+    position: absolute;
+    left: 88px;
+    top:0;
+    width: 8px;
+    height: 12px;
+    padding: 11px 16px 17px;
+    background-color: rgb(32,32,32,.8);
+    border-radius: 5px;
+}
+/* 背景图信息提示框-右箭头 */
+.ImgTip .Right{
+    position: absolute;
+    left: 132px;
+    top:0;
+    width: 8px;
+    height: 12px;
+    padding: 11px 16px 17px;
+    background-color: rgb(32,32,32,.8);
+    border-radius: 5px;
+}
+/* 搜索框 */
+.SearchContainer{
+    position: relative;
+    left: 350px;
+    top:130px;
+    width: 506px;
+    height: 12px;
+}
+input[type=text]{
+    z-index: 1;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 506px;
+    height: 12px;
+    padding: 20px 80px 20px 12px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-family: "微软雅黑" "宋体";
+    outline: none;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border:none;    
+}
+/* 搜索框图标-voice */
+.SearchContainer .voiceImage{
+    z-index: 2;
+    position: absolute;
+    left: 518px;
+    top: 0;
+    height: 52px;
+    width: 26px;
+    padding: 12px 1px;
+    cursor: pointer;
+}
+/* 搜索框图标-search */
+.SearchContainer .searchImage{
+    z-index: 2;
+    position: absolute;
+    left: 555px;
+    top:0;
+    height: 52px;
+    width: 26px;
+    padding: 12px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* 梯形 */
+.SearchContainer .trapezoid_national{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 3;
+    width: 80px ;
+    height: 36px;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom-width: 36px;
+    border-right-width: 15px;
+    border-color: transparent transparent white transparent;
+}
+.SearchContainer .trapezoid_international{
+    position: absolute;
+    bottom: 100%;
+    left: 85px;
+    z-index: 2;
+    width: 80px;
+    height: 36px;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom-width: 36px;
+    border-right-width: 15px;
+    border-color: transparent transparent #D6D6D6 transparent;
+}
+.SearchContainer .word_national{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 3;
+    color: black;
+    height: 17px;
+    width: 80px;
+    padding: 13px 13px;
+    font-family: "微软雅黑";
+    font-size: 17px;
+}
+.SearchContainer .word_international{
+    position: absolute;
+    bottom: 100%;
+    left: 85px;
+    z-index: 3;
+    color: black;
+    height: 17px;
+    width: 80px;
+    padding: 13px 13px;
+    font-family: "微软雅黑";
+    font-size: 17px;
+}
+
+/* voice提示框 */
+/* .VoiceTip{
+    visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    left: 518px;
+    margin-left: -28px;
+    top: 105%;
+
+    width: 82px;
+    height: 40px;
+    padding: 13px 14px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: #666666;
+    border-radius: 5px;
+}
+.VoiceTip:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #666666 transparent;
+}
+.voiceImage:hover .VoiceTip{visibility: visible;}
+
+/* search提示框 */
+/* .SearchTip{
+    visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    left: 555px;
+    margin-left: -28px;
+    top: 105%;
+    width: 82px;
+    height: 40px;
+    padding: 13px 14px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: #666666;
+    border-radius: 5px;
+}
+.SearchTip:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #666666 transparent;
+}
+.searchImage:hover .SearchTip{visibility: visible;} */ */
