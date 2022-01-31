@@ -1,0 +1,120 @@
+#divPwdRegister{
+    display: none;
+}
+#divInfoRegister{
+    display: none;
+}
+.pad{
+    position: absolute;
+    margin-left: 50%;
+    left: -220px;
+    margin-top:11%;
+    width: 440px;
+    height: 404px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+    padding:44px;
+}
+
+.web_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    margin:0;
+    z-index: -1;
+    background-image: url("../img/login/web_bg.jpg");
+}
+
+.binglogo{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 90px;
+    height: 36px;
+    margin-left: 50%;
+    left: -45px;
+    margin-top: 75px;
+
+}
+
+.err{
+    color: red;
+    font-size: 13px;
+}
+
+p,span{
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    font-size: 15px;
+    margin:2px;
+}
+
+.mic {
+    width: 108px;
+    height: 24px;
+    margin-top: 0;
+}
+
+.btn {
+    position: absolute;
+    width: 108px;
+    height: 32px;
+    right: 30px;
+    bottom: 30px;
+    background-color: #046fe0;
+    color: #fff;
+    
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(0,95,166);
+}
+
+input{
+    border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 1px;
+        padding: 6px 10px 6px 0;
+        height:23px;
+        width: 338px;
+        outline: none;
+        font-size: 15px;
+}
+
+.footer{
+    width:100%;
+    height: 28px;
+    margin: 0;
+    bottom: 0;
+    background-color: #333030;
+    position: fixed;
+
+}
+.footer .wz{
+    bottom: -16px;
+    right:0;
+    position: fixed;
+}
+.footer .a{
+    text-decoration: none;
+    color: #dfe0e3;
+}
+.footer .a:hover{
+    color: #c5c6dc;
+    text-decoration: underline;
+}
+.dian{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+}

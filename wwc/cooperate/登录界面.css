@@ -1,0 +1,185 @@
+p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #666666;
+    list-style: none;
+}
+.web_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -11;
+    zoom: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    
+}
+
+.binglogo{
+    max-width: 90px;
+    max-height: 36px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    animation: fadeIn 1s
+}
+
+.inputbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
+    width: 440px;
+    height: 348px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.inputbox .pad {
+    padding: 44px;
+    width: 352px;
+    height: 260.25px;
+}
+.inputbox .pad .mic {
+    width: 108px;
+    height: 24px;
+    margin-top: 0;
+}
+.inputbox .pad .dv{
+    width: 352px;
+    height: 28px;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 0;
+
+}
+.inputbox .pad .dvb{
+    width: 352px;
+    height: 20px;
+    color: #1b1b1b;
+    font-size:unset;
+    font-weight: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.inputbox .pad .dvk {
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    padding: 6px 10px 6px 0;
+    height:23px;
+    width: 338px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 13px;
+}
+.inputbox .pad .wenzi {
+    font-size: unset;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+.inputbox .pad .wenzi .a{
+    text-decoration: none;
+    color: #146dd7;
+}
+.inputbox .pad .wenzi .a:hover{
+    color: #c5c6dc;
+    text-decoration: underline;
+}
+.inputbox .pad .wenhao{
+    width: 348px;
+    height: 20px;
+    margin-top:5px ;
+    margin-bottom: 16px;
+    font-size: unset;
+    background: url("./svg/question.svg") no-repeat;
+    background-position-x: 210px;
+    position: absolute;
+}
+.inputbox .pad .wenhao .a{
+    text-decoration: none;
+    color: #146dd7;
+}
+.inputbox .pad .wenhao .a:hover{
+    color: #c5c6dc;
+    text-decoration: underline;
+}
+.inputbox .pad .btn {
+    width: 108px;
+    height: 32px;
+    background-color: #046fe0;
+    color: #fff;
+    margin-top: 36px;
+    margin-left: 244px;
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+}
+
+
+.bt{
+    width:440px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.bt .pad{
+    width: 352px;
+    height: 32px;
+    margin: 8px 44px;
+    font-size: 15px;
+    font-weight:400;
+    color: #171515;
+    background: url("./svg/key.svg") no-repeat;
+    background-size: 32px;
+    background-position-x: 0;
+    position: absolute;
+
+}
+.bt .pad .a{
+    margin-left: 50px;
+    margin-top: 6px;
+}
+
+
+.footer{
+    width:100%;
+    height: 28px;
+    margin: 0;
+    bottom: 0;
+    background-color: #333030;
+    position: fixed;
+
+}
+.footer .wz{
+    bottom: -16px;
+    right:0;
+    position: fixed;
+}
+.footer .a{
+    text-decoration: none;
+    color: #dfe0e3;
+}
+.footer .a:hover{
+    color: #c5c6dc;
+    text-decoration: underline;
+}
+.dian{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+}

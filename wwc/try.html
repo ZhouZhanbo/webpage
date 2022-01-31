@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try</title>
+</head>
+
+<body>
+    
+
+    <input type="text" id="account">
+    <button type="button" onclick="push()">push</button>
+    <div id="show"></div>
+
+    <script>
+         
+        var reg_num = /[a-zA-z@]/
+        var num = "123";
+        document.getElementById("show").innerHTML = !reg_num.test(num);
+        // function push(){
+        //     var account = document.getElementById("account").value;
+        //     var account_str = account + '';
+            
+        //     document.getElementById("show").innerHTML = localStorage.length;
+        // }
+
+    </script>
+</body>
+
+</html>

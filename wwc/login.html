@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" type="image/-icon" href="./img/login/logo-微软.ico"/>
+</head>
+<body>
+    <!-- 背景图片 -->
+    <div class="web_bg"></div>
+    <!-- binglogo -->
+    <div class="binglogo">
+        <img src="./img/login/bing.png" height=100% width=100%/ alt=""  alt="">
+    </div>
+    <!-- 输入邮箱或者电话号码 -->
+    <div id="divAccountLogin" class="pad">
+        <img src="./img/login/mic.svg" height=100% width=100%/ alt=""  alt="" class="mic">
+        <p style="font-size: 24px;font-weight: 600;">Sign in</p>
+        <p style="font-size: 13px;">to continue to Bing</p><br>
+        <p>For a personalized search experience that can save your time and money, just sign in to Bing</p><br>
+
+        <!-- 输入：账户 -->
+        <p id="errAccountLogin" class="err"></p>
+        <input type="text" id="accountLogin" placeholder="email or phonenubmer">
+        <br><br>
+        <p style="font-size: 13.5px;">No account?<a href="./register.html" style="text-decoration: none;"> Create one!</a></p><br>
+        <button type="button" onclick="NextToPwdLogin()" class="btn">Next</button>
+    </div>
+    
+    <!-- 输入密码 -->
+    <div id="divPwdLogin" class="pad">
+        <img src="./img/login/mic.svg" height=100% width=100%/ alt=""  alt="" class="mic"><br><br>
+        <img src="./img/login/左箭头.svg" width="18px" height="18px" onclick="Backforward()"> <span id="accountLogined"></span><br>
+        <p style="font-size: 24px;font-weight: 600;">Enter password</p>
+        <br>
+        <!-- 输入：密码 -->
+        <p id="errPwdLogin" class="err"></p>
+        <input type="text" id="pwdLogin" placeholder="password"><br>
+        <br><br>
+        <button type="button" onclick="SignIn()" class="btn">Sign in</button>
+    </div>
+    <div class="footer">
+        <div class="wz">
+    
+            <a class="a" href="https://www.microsoft.com/zh-cn/servicesagreement/">使用条款</a>
+            <a class="a" href="https://privacy.microsoft.com/zh-cn/privacystatement">隐私和 cookie</a>
+            <span class="dian">...</span>
+        </div>
+    </div>
+    
+    <script src="./js/login.js"></script>
+</body>
+</html>
