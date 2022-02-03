@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" type="image/-icon" href="./img/login/logo-微软.ico"/>
+</head>
+<body>
+    <!-- 背景图片 -->
+    <div class="web_bg"></div>
+    <!-- binglogo -->
+    <div class="binglogo">
+        <img src="./img/login/bing.png" height=100% width=100%/ alt=""  alt="">
+    </div>
+    <!-- 注册邮箱 -->
+    <div id="divEmailRegister" class="pad">
+        <img src="./img/login/mic.svg" height=100% width=100%/ alt=""  alt="" class="mic"><br><br>
+        <p style="font-size: 24px;font-weight: 600;">Create account</p><br>
+        <p>For a personalized search experience that can save your time and money, just sign up for a Microsoft account</p>
+        <br>
+        <!-- 输入：邮箱 -->
+        <p id="errEmailRegister" class="err"></p>
+        <input type="text" id="emailRegister" placeholder="someone@example.com"><br>
+        <br>
+        <button type="button" onclick="NextToPwdRegister()" class="btn">Next</button>
+    </div>
+    <br>
+    <!-- 注册密码 -->
+    <div id="divPwdRegister" class="pad">
+        <img src="./img/login/mic.svg" height=100% width=100%/ alt=""  alt="" class="mic"><br><br>
+        <img src="./img/login/左箭头.svg" width="18px" height="18px" onclick="Backforward1()"> <span id="accountRegistered"></span><br>
+        <p style="font-size: 24px;font-weight: 600;">Create a password</p><br>
+        <p>Enter the password you would like to use with your account.</p>
+        <br>
+        
+        <!-- 输入：密码 -->
+        <P id="errPwdRegister" class="err"></P>
+        <input type="password" id="pwdRegister" placeholder="password">
+        <br><br>
+        <button type="button" onclick="NextToInfo()" class="btn">Next</button>
+    </div>
+    <br>
+    <!-- 注册个人信息 -->
+    <div id="divInfoRegister" class="pad">
+        <img src="./img/login/mic.svg" height=100% width=100%/ alt=""  alt="" class="mic"><br><br>
+        <img src="./img/login/左箭头.svg" width="18px" height="18px" onclick="Backforward2()"> <span id="accountRegistered2"></span>
+        <p style="font-size: 24px;font-weight: 600;">More detailed info</p><br>
+        <p>We need just a little more info to set up your account.</p>
+        
+        <!-- 输入：电话号码 -->
+        <p style="margin-top: 5px;" id="errPhoneRegister" class="err"></p>
+        <input type="text" id="phoneRegister" placeholder="Phonenumber"><br>
+        <!-- 输入：姓 -->
+        <p id="errFirstNameRegister" class="err"></p>
+        <input type="text" id="firstNameRegister" placeholder="First name"><br>
+        <!-- 输入：名 -->
+        <p id="errLastNameRegister" class="err"></p>
+        <input type="text" id="lastNameRegister" placeholder="Last name"><br>
+
+        <button type="button" onclick="Register()" class="btn">Next</button>
+    </div>
+
+    <div class="footer">
+        <div class="wz">
+    
+            <a class="a" href="https://www.microsoft.com/zh-cn/servicesagreement/">使用条款</a>
+            <a class="a" href="https://privacy.microsoft.com/zh-cn/privacystatement">隐私和 cookie</a>
+            <span class="dian">...</span>
+        </div>
+    </div>
+
+    <script src="./js/register.js"></script>
+</body>
+</html>
