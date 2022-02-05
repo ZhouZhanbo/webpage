@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>必应</title>
+    <title id="title">必应</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="./js/index.js"></script>
 </head>
 
 <body>
-    <div class="background_picture"></div>
+    <div id="background_picture" class="background_picture"></div>
+    <script type="text/javascript" src="./js/index.js"></script>
     <div class="footer">
         <a href="https://cn.bing.com/#">增值电信业务经营许可证：合字B2-20090007</a>
         <a href="https://beian.miit.gov.cn/#/Integrated/index">京ICP备10036305号-7</a>
@@ -19,29 +19,29 @@
         <a href="https://www.microsoft.com/zh-cn/servicesagreement/">法律声明</a>
         <a href="https://biying.westwin.com/">广告</a>
         <a href="https://account.microsoft.com/privacy/ad-settings/signedout?refd=cn.bing.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fad-settings%3Frefd%3Dcn.bing.com">关于我们的广告</a>
-        <span class="microsoft">&copy 2021 Microsoft</span><br>
         <a href="https://cn.bing.com/#">帮助</a>
         <a href="https://help.bing.microsoft.com/#apex/18/zh-CHS/10011/0">反馈</a>
+        <span class="microsoft">&copy 2022 Microsoft</span><br>
     </div>
     <div class="microsoftlogo">
         <img src="img/Microsoft.svg" alt="microsoftlogo" width="24px" height="24px">
     </div>
     <div class="microsoft_font">Microsoft Bing</div>
     <div class="pictureWordBox">
-        <a href="https://cn.bing.com/images/trending?form=Z9LH">图片</a>
+        <a href="https://cn.bing.com/images/trending?form=Z9LH" id="image"><span id="images">图片</span></a>
     </div>
     <div class="videoWordBox">
-        <a href="https://cn.bing.com/videos/trending?form=Z9LH1">视频</a>
+        <a href="https://cn.bing.com/videos/trending?form=Z9LH1" id="video"><span id="videos">视频</span></a>
     </div>
     <div class="ThreePoint">
         <img src="img/menu1.svg" alt="menu1" width="22px" height="14px">
         <div class="PointMenuBox">
-            <a href="https://cn.bing.com/academic?FORM=Z9LHS3">学术</a>
-            <a href="https://cn.bing.com/dict?FORM=Z9LHS4">词典</a>
-            <a href="https://cn.bing.com/maps?FORM=Z9LH2" style="border-bottom: 1px solid #dddddd;">地图</a>
+            <a href="https://cn.bing.com/academic?FORM=Z9LHS3"><span id="takelessons">学术</span></a>
+            <a href="https://cn.bing.com/dict?FORM=Z9LHS4"><span id="dictionary">词典</span></a>
+            <a href="https://cn.bing.com/maps?FORM=Z9LH2" style="border-bottom: 1px solid #dddddd;"><span id="map">地图</span></a>
             <a href="https://www.msn.cn/zh-cn?ocid=BHEA000">MSN</a>
             <div class="office">
-                <a href="https://www.office.com/?WT.mc_id=O16_BingHP">Office</a>
+                <a href="https://www.office.com/?WT.mc_id=O16_BingHP">Office&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></a>
                 <div class="officeMenuBox">
                     <a href="https://outlook.live.com/owa/?WT.mc_id=O16_BingHP">Outlook</a>
                     <a href="https://office.live.com/start/Word.aspx?WT.mc_id=O16_BingHP">word</a>
@@ -63,42 +63,41 @@
     <div class="UserCircle">
         <img src="img/circle.svg" alt="circle" width="32px" height="32px">
         <div><img src="img/user.svg" alt="user" width="13px" height="15px"></div>
-        <span onclick="skipToLogin()">登录</span>
+        <span onclick="skipToLogin()" id="signin">登录</span>
     </div>
     <div class="ThreeLine">
         <img src="img/menu.svg" alt="menu" width="30px" height="25px">
-        <div class="LineMenuTip">设置和快速链接</div>
+        <div id="111" class="LineMenuTip">设置和快速链接</div>
     </div>
-    <div class="ImgTip">
+    <div class="ImgTip" id="imgtip">
         <div>
-            <img src="img/location.svg" width="21px" height="20px">
+            <img src="img/location.svg" width="21px" height="20px" style="margin-left:px;" id="location">
         </div>
-        <div class="ImgTipWord">信息</div>
+        <div id="information" class="ImgTipWord">信息</div>
         <div class="Right">
-            <img src="img/right.svg" alt="right" width="12px" height="12px">
+            <img src="img/right.svg" alt="right" width="13px" height="15px">
         </div>
         <div class="Left">
-            <img src="img/left.svg" alt="left" width="12px" height="12px">
+            <img src="img/left.svg" alt="left" width="13px" height="15px">
         </div>
     </div>
     <div class="SearchContainer">
         <input type="text" name="search">
         <div class="voiceImage">
             <img src="img/voice.svg" alt="voice" width="28px" height="28px">
-        <!-- <div class="VoiceTip">语音搜索</div> -->
+        <div id="222" class="VoiceTip">语音搜索</div> 
         </div>
         <div class="searchImage">
-            <img src="img/search.svg" alt="search" width="28px" height="28px">
-        <!-- <div class="SearchTip">搜索网页</div> -->
+            <a href="https://cn.bing.com/?FORM=BEHPTB" id="search"><img src="img/search.svg" alt="search" width="28px" height="28px"></img></a>
+            <div id="333" class="SearchTip">搜索网页</div>
         </div>
        
-        <div class="trapezoid_national"></div>
-        <div class="trapezoid_international"></div>
-        <div class="word_national">国内版</div>
-        <div class="word_international">国际版</div>
+        <div id="national" class="trapezoid_national"></div>
+        <div id="international" class="trapezoid_international"></div>
+        <div id="n" class="word_national"><span type="button" onclick="changeversion2()">国内版</span></div>
+        <div id="i" class="word_international"><span type="button" onclick="changeversion1()">国际版</span></div>
     </div>
 
-    <script src="./js/index.js"></script>
 </body>
 
 </html>

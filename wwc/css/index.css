@@ -2,7 +2,7 @@
 .background_picture{
     position:fixed;
     width:100%;
-    height:92%;
+    height:100%;
     left:0;
     top:0;
     margin:0;
@@ -12,13 +12,13 @@
 /* 底部信息栏 */
 .footer{
     position: fixed;
-    height: 8%;
+    height: 3%;
     width:100%;
     left:0;
     bottom:0;
     margin:0;
     background-color: #333333;
-    padding: 11px 134px;
+    padding: 7px 100px;
 }
 /* 底部信息栏链接 */
 .footer a {
@@ -241,26 +241,27 @@
 .ImgTip{
     position: fixed;
     z-index: 1;
-    right : 209px;
-    bottom: 81px;
-    width: 84px;
+    right : 222px;
+    bottom: 45px;
+    width: 80px;
     height: 40px;
     background-color: rgb(32,32,32,.8);
     border-radius: 5px;
 }
 .ImgTip div{
     position: absolute;
-    top: 9px;
+    margin-left:-4px;
+    top: 10px;
     left: 11px;
     width: 21px;
     height: 20px;
 }
 .ImgTip .ImgTipWord{
     position: absolute;
-    display: inline-block;
-    top: 9px;
+    display: flex;
+    top: 12px;
     left :42px;
-    width: 27px;
+    width: 44px;
     color: white;
     font-size: 13px;
 
@@ -270,7 +271,7 @@
     position: absolute;
     left: 88px;
     top:0;
-    width: 8px;
+    width: 9px;
     height: 12px;
     padding: 11px 16px 17px;
     background-color: rgb(32,32,32,.8);
@@ -281,7 +282,7 @@
     position: absolute;
     left: 132px;
     top:0;
-    width: 8px;
+    width: 9px;
     height: 12px;
     padding: 11px 16px 17px;
     background-color: rgb(32,32,32,.8);
@@ -290,7 +291,7 @@
 /* 搜索框 */
 .SearchContainer{
     position: relative;
-    left: 350px;
+    left: 400px;
     top:130px;
     width: 506px;
     height: 12px;
@@ -308,7 +309,7 @@ input[type=text]{
     font-size: 18px;
     font-family: "微软雅黑" "宋体";
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     border-top-left-radius: 0px;
     border:none;    
 }
@@ -344,7 +345,7 @@ input[type=text]{
     bottom: 100%;
     left: 0;
     z-index: 3;
-    width: 80px ;
+    width: 75px ;
     height: 36px;
     border-style: solid;
     border-left: none;
@@ -358,7 +359,7 @@ input[type=text]{
     bottom: 100%;
     left: 85px;
     z-index: 2;
-    width: 80px;
+    width: 75px;
     height: 36px;
     border-style: solid;
     border-left: none;
@@ -390,21 +391,20 @@ input[type=text]{
     padding: 13px 13px;
     font-family: "微软雅黑";
     font-size: 17px;
+    cursor: pointer;
 }
 
 /* voice提示框 */
-/* .VoiceTip{
+ .VoiceTip{
     visibility: hidden;
     z-index: 4;
     position: absolute;
-    left: 518px;
-    margin-left: -28px;
-    top: 105%;
-
-    width: 82px;
-    height: 40px;
-    padding: 13px 14px;
-    font-size: 12px;
+    left: -27px;
+    top: 65%;
+    width: 60px;
+    height: 14px;
+    padding: 13px 12px;
+    font-size: 13px;
     text-align: center;
     color: white;
     background-color: #666666;
@@ -423,17 +423,16 @@ input[type=text]{
 .voiceImage:hover .VoiceTip{visibility: visible;}
 
 /* search提示框 */
-/* .SearchTip{
+ .SearchTip{
     visibility: hidden;
     z-index: 4;
     position: absolute;
-    left: 555px;
-    margin-left: -28px;
-    top: 105%;
-    width: 82px;
-    height: 40px;
-    padding: 13px 14px;
-    font-size: 12px;
+    left: -30px;
+    top: 65%;
+    width: 60px;
+    height: 14px;
+    padding: 13px 12px;
+    font-size: 13px;
     text-align: center;
     color: white;
     background-color: #666666;
@@ -449,4 +448,4 @@ input[type=text]{
     border-style: solid;
     border-color: transparent transparent #666666 transparent;
 }
-.searchImage:hover .SearchTip{visibility: visible;} */ */
+.searchImage:hover .SearchTip{visibility: visible;} 
